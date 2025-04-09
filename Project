@@ -1,0 +1,81 @@
+import random
+
+questions = {
+    "Dragon Ball Super": [
+        ("Who visits Earth to find the Super Saiyan God?",
+         ["Beerus", "Whis", "Shenron"], "Beerus"),
+        ("Who wins the Tournament of Power?", [
+         "Goku", "Frieza", "Android 17"], "Android 17")
+    ],
+    "Solo Leveling": [
+        ("What is Sung Jin Woo's class?", [
+         "E-Rank", "Shadow Monarch", "Hunter"], "Shadow Monarch"),
+        ("First boss Sung Jin Woo adds to army?", [
+         "Giant", "Ice Dragon", "Golem"], "Giant")
+    ],
+    "Konosuba": [
+        ("What class is Kazuma?", ["Adventurer",
+         "Thief", "Laziness Expert"], "Adventurer"),
+        ("What is the first skill Kazuma learns?", [
+         "Steal", "Appraisal", "Sword Mastery"], "Steal")
+    ],
+    "That Time I Got Reincarnated as a Slime": [
+        ("How does Satoru die in the real world?", [
+         "Knife stab", "Truck accident", "Explosion"], "Knife stab"),
+        ("Who betrays Rimuru in Season 2?", [
+         "Shion", "Milim", "Benimaru"], "Milim")
+    ],
+    "Spy x Family": [
+        ("What is Anya's power?", ["Mind reading",
+         "Telepathy", "Teleportation"], "Telepathy"),
+        ("What is Lloyd Forger's secret job?", [
+         "Spy", "Assassin", "Businessman"], "Assassin")
+    ],
+    "Gundam": [
+        ("Who is the first protagonist?", [
+         "Amuro Ray", "Kamille Bidan", "Shinji Ikari"], "Amuro Ray"),
+        ("Name for people genetically altered at birth?", [
+         "Coordinators", "Newtypes", "Titans"], "Coordinators")
+    ],
+    "Code Geass": [
+        ("Who had mind-reading Geass?", ["Mao", "Rolo", "C.C."], "Mao"),
+        ("Who never had Geass?", [
+         "Anya Alstreim", "Suzaku Kururugi", "Kallen Stadtfeld"], "Anya Alstreim")
+    ]
+}
+
+
+def ask(universe, q, choices, answer):
+    print("\n" + universe)
+    print(q)
+    for c in choices:
+        print("-", c)
+    user = input("Your answer: ")
+    if user.lower() == answer.lower():
+        print("Correct!")
+        return 1
+    else:
+        print("Wrong! The right answer was:", answer)
+        return 0
+
+
+def main():
+    print("Welcome to the Anime Trivia Game!\n")
+    score = 0
+    total = len(questions) * 2
+
+    for name in questions:
+        picks = random.sample(questions[name], 2)
+        for q, c, a in picks:
+            score += ask(name, q, c, a)
+
+    print("\nYour score:", score, "/", total)
+    if score == total:
+        print("🌟 Amazing! You're a true anime master!")
+    elif score >= total * 0.5:
+        print("👍 Not bad!")
+    else:
+        print("😅 Better luck next time!")
+
+
+main()
