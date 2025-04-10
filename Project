@@ -46,7 +46,7 @@ questions = {
 
 
 def ask(universe, q, choices, answer):
-    print("\n" + universe)
+    print(f"\nEntering the {universe} universe!")
     print(q)
     for c in choices:
         print("-", c)
