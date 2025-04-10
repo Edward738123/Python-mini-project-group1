@@ -11,7 +11,7 @@ questions = {
         ("What is Sung Jin Woo's class?", [
          "E-Rank", "Shadow Monarch", "Hunter"], "Shadow Monarch"),
         ("First boss Sung Jin Woo adds to army?", [
-         "Giant", "Ice Dragon", "Golem"], "Giant")
+         "Igris", "Ice Elf", "Tank"], "Igris")
     ],
     "Konosuba": [
         ("What class is Kazuma?", ["Adventurer",
@@ -26,7 +26,7 @@ questions = {
          "Shion", "Milim", "Benimaru"], "Milim")
     ],
     "Spy x Family": [
-        ("What is Anya's power?", ["Mind reading",
+        ("What is Anya's power?", ["Super Strength",
          "Telepathy", "Teleportation"], "Telepathy"),
         ("What is Lloyd Forger's secret job?", [
          "Spy", "Assassin", "Businessman"], "Assassin")
