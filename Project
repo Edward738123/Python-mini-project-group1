@@ -29,7 +29,7 @@ questions = {
         ("What is Anya's power?", ["Super Strength",
          "Telepathy", "Teleportation"], "Telepathy"),
         ("What is Lloyd Forger's secret job?", [
-         "Spy", "Assassin", "Businessman"], "Assassin")
+         "Spy", "Assassin", "Businessman"], "Spy")
     ],
     "Gundam": [
         ("Who is the first protagonist?", [
