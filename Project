@@ -1,5 +1,9 @@
 import random
 
+# Dictionary storing anime trivia questions.
+# Each key represents an anime series, and the value is a list of tuples.
+# Each tuple contains a question, a list of answer choices, and the correct answer.
+
 questions = {
     "Dragon Ball Super": [
         ("Who visits Earth to find the Super Saiyan God?",
@@ -44,6 +48,8 @@ questions = {
     ]
 }
 
+# Function to ask a trivia question from a specific anime universe.
+# It prints the question, displays the choices, takes user input, and checks whether its correct or not.
 
 def ask(universe, q, choices, answer):
     print(f"\nEntering the {universe} universe!")
@@ -58,6 +64,8 @@ def ask(universe, q, choices, answer):
         print("Wrong! The right answer was:", answer)
         return 0
 
+# Main function to run the Anime Trivia Game.
+# Calculates the final score.
 
 def main():
     print("Welcome to the Anime Trivia Game!\n")
