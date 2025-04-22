@@ -58,17 +58,16 @@ def ask(universe, q, choices, answer):
         print("-", c)
     user = input("Your answer: ")
     if user.lower() == answer.lower():
-        print("Correct!")
+        print("Tch… CORRECT! But don’t let it go to your head.")
         return 1
     else:
-        print("Wrong! The right answer was:", answer)
+        print("INCORECT! But I’ll give you credit for the attempt. The true answer is…:", answer)
         return 0
 
 # Main function to run the Anime Trivia Game.
 # Calculates the final score.
 
-def main():
-    print("Welcome to the Anime Trivia Game!\n")
+def play_game():
     score = 0
     total = len(questions) * 2
 
@@ -79,11 +78,22 @@ def main():
 
     print("\nYour score:", score, "/", total)
     if score == total:
-        print("🌟 Amazing! You're a true anime master!")
+        print("🌟 Such power… such wisdom… You are the anime master!")
     elif score >= total * 0.5:
-        print("👍 Not bad!")
+        print("👍 Not bad... but I’ve seen better.")
     else:
-        print("😅 Better luck next time!")
+        print("😅 Better luck next time... but I won’t go easy on you!")
+
+
+def main():
+    print("Welcome, challenger, to the Anime Trivia Game. Your knowledge shall now be tested!\n")
+    while True:
+        play_game()
+        again = input(
+            "\n“The game is far from over… shall we dance again?” (yes/no): ").strip().lower()
+        if again != "yes":
+            print("Game over… for now. Farewell.")
+            break
 
 
 main()
