@@ -1,4 +1,3 @@
-Overview
 This project is a general anime trivia game, testing knowledge across multiple genres, including:
 
 - Shonen
