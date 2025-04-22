@@ -1,3 +1,5 @@
+                                                      Python Project
+
 This project is a general anime trivia game, testing knowledge across multiple genres, including:
 
 - Shonen
@@ -11,6 +13,7 @@ This project is a general anime trivia game, testing knowledge across multiple g
 Players answer multiple-choice questions to earn points and receive personalized feedback based on their performance.
 
 How to Play
+
 1. Run the Python script.
 
 2. The game will present trivia questions one by one.
@@ -24,4 +27,5 @@ How to Play
 6. You can choose to play again or exit the game.
 
 Credits:
+
 Project developed by Edward Jusino and Emilio Carrillo for a Python Programming Class Project
