@@ -78,7 +78,7 @@ def play_game():
 
     print("\nYour score:", score, "/", total)
     if score == total:
-        print("🌟 Such power… such wisdom… You are the anime master!")
+        print("🌟 Such power… such wisdom… You truly are the anime master!")
     elif score >= total * 0.5:
         print("👍 Not bad... but I’ve seen better.")
     else:
