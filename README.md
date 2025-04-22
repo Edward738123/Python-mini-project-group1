@@ -1,25 +1,25 @@
 Overview
 This project is a general anime trivia game, testing knowledge across multiple genres, including:
 
-Shonen
+- Shonen
 
-Isekai
+- Isekai
 
-Slice of Life
+- Slice of Life
 
-Mecha
+- Mecha
 
 Players answer multiple-choice questions to earn points and receive personalized feedback based on their performance.
 
 How to Play
-Run the Python script.
+1. Run the Python script.
 
-The game will present trivia questions one by one.
+2. The game will present trivia questions one by one.
 
-Choose your answer from the three options given.
+3. Choose your answer from the three options given.
 
-Your answer is checked, and your score is updated.
+4. Your answer is checked, and your score is updated.
 
-At the end, you'll receive a final score with feedback on your anime knowledge!
+5. At the end, you'll receive a final score with feedback on your anime knowledge!
 
-You can choose to play again or exit the game.
+6. You can choose to play again or exit the game.
