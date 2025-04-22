@@ -22,3 +22,6 @@ How to Play
 5. At the end, you'll receive a final score with feedback on your anime knowledge!
 
 6. You can choose to play again or exit the game.
+
+Credits
+Project developed by Edward Jusino and Emilio Carrillo for a Python Programming Class Project
